@@ -11,8 +11,8 @@
 <body>
     <h1 style="text-align: center;">Register</h1>
     <div class="box">
-        dddd = <input style="" type="text">
+        dddd = <input style="text-align:center;" type="text">
     </div>
 </body>
 
-</html>text
+</html>
