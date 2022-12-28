@@ -13,7 +13,7 @@ License URI: http://www.themevault.net/license/-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="images/icons/favicon.png" />
     <title>hotel</title>
-    
+
 
     <!-- Bootstrap core CSS -->
     <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet" />
@@ -90,7 +90,7 @@ License URI: http://www.themevault.net/license/-->
                                 <div class="collapse navigation navbar-collapse navbar-ex1-collapse remove-space">
                                     <ul id="" class="list-unstyled nav1 cl-effect-10">
                                         <li>
-                                            <a data-hover="Home" href="{{route('home.index')}}" ><span>Home</span></a>
+                                            <a data-hover="Home" href="{{route('home.index')}}"><span>Home</span></a>
                                         </li>
                                         <li>
                                             <a data-hover="About" href="{{route('about.index')}}"><span>About</span></a>
@@ -113,7 +113,7 @@ License URI: http://www.themevault.net/license/-->
                         </div>
                         <div class="col-md-2 col-sm-4 col-xs-12 hidden-sm">
                             <div class="text-right">
-                                <button type="button" class="book-now-btn">Book Now</button>
+                                <button style="border-radius: 12px;" class="book-now-btn">SING-IN</button>
                             </div>
                         </div>
                     </div>
@@ -170,7 +170,7 @@ License URI: http://www.themevault.net/license/-->
                             <h4>explore</h4>
                             <ul class="list-unstyled footer-links">
                                 <li class="active"><a href="{{route('home.index')}}">Home</a></li>
-                                <li><a href="{{route('about.index')}}">About</a></li>
+                                <li><a href="{{route('about.index')}}" style="border-radius: 12 px;">About</a></li>
                                 <li><a href="{{route('hotel.index')}}">Hotel</a></li>
                                 <li><a href="{{route('manage.index')}}">Manage</a></li>
                                 <li><a href="{{route('detail.index')}}">Detail</a></li>
@@ -203,18 +203,18 @@ License URI: http://www.themevault.net/license/-->
             <span>Top</span>
         </a>
     </div>
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript">
-$(function() {
-    var path = window.location.href; // Mengambil data URL pada Address bar
-    $('nav a').each(function() {
-        // Jika URL pada menu ini sama persis dengan path...
-        if (this.href === path) {
-            // Tambahkan kelas "active" pada menu ini
-            $(this).addClass('active');
-        }
-    });
-});
+        $(function() {
+            var path = window.location.href; // Mengambil data URL pada Address bar
+            $('nav a').each(function() {
+                // Jika URL pada menu ini sama persis dengan path...
+                if (this.href === path) {
+                    // Tambahkan kelas "active" pada menu ini
+                    $(this).addClass('active');
+                }
+            });
+        });
     </script>
 </body>
 
