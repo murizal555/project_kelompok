@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('bookings', function (Blueprint $table) {
             $table->id('id_booking');
-            $table->foreignId('id_pelanggan');
+            $table->foreignId('id_pelanggan')->nullable();
             // $table->foreignId('id_transaksi');
             $table->string('nm');
             $table->string('room');

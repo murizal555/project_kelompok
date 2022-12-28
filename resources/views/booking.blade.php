@@ -160,18 +160,18 @@
       <br />
       <div class="input-group">
         <label for="fasilitas">E-mail</label>
-        <input type="email" id="adults" min="50" name="fasilitas">
+        <input type="email" id="adults" min="50" name="email">
       </div>
       <br>
       <div class="input-group">
         <label for="fasilitas">No_Telpon</label>
-        <input type="tel" pattern="^\d{12}$" required>
+        <input type="tel" pattern="^\d{12}$" required name="NO_Telpon">
 
       </div>
       <br>
       <div class="input-group">
         <label for="fasilitas">Jumalah tamu</label>
-        <input type="text" id="adults" min="50" name="fasilitas">
+        <input type="text" id="adults" min="50" name="jumlah_tamu">
       </div>
   </div>
   <div class="flex">
