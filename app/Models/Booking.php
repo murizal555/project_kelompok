@@ -14,7 +14,10 @@ class Booking extends Model
         'room',
         'fasilitas',
         'cek_in',
-        'cek_out'
+        'cek_out',
+        'no_tlp',
+        'email',
+        'jumlah_tamu'
 
     ];
 }

@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Form Booking Hotel - Syarif</title>
+  <title>Formbk Hotel - Syarif</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link href="https://repo.rachmat.id/jquery-ui-1.12.1/jquery-ui.css" rel="stylesheet">
   <script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
@@ -130,7 +130,7 @@
   <div class="container">
     <form action="{{route('booking.store')}}" method="POST">
       @csrf
-      <h1 style="text-align: center;">Hotel Booking</h1><br>
+      <h1 style="text-align: center;">Hotel boking</h1><br>
       <div class="input-group">
         <label for="Nama">Nama</label>
         <input type="text" id="" name="nm">
@@ -179,6 +179,7 @@
     <button type="submit">Submit</button>
     <!-- <input type="submit" class="submit-btn" value="Submit" /> -->
   </div>
+  </tr>
   </div>
   </form>
   </div>

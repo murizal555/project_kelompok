@@ -113,7 +113,7 @@ License URI: http://www.themevault.net/license/-->
                         </div>
                         <div class="col-md-2 col-sm-4 col-xs-12 hidden-sm">
                             <div class="text-right">
-                                <button style="border-radius: 12px;" class="book-now-btn">SING-IN</button>
+                                <a href="{{route('reg.index')}}"> <button style="border-radius: 12px;" class="book-now-btn" href="">SING-IN</button></a>
                             </div>
                         </div>
                     </div>

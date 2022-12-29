@@ -2,11 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Booking;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Validator;
 
-class BookingController extends Controller
+class reg extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +13,9 @@ class BookingController extends Controller
      */
     public function index()
     {
-        $title = 'Booking';
-        return view('booking', compact('title'));
+        //
+        $title = 'index';
+        return view('index', compact('title'));
     }
 
     /**
@@ -37,29 +36,7 @@ class BookingController extends Controller
      */
     public function store(Request $request)
     {
-        // dd($request);
-        // $request->validate([
-        //      'nama'=>'require|max:255',
-        //      'check-in'=>'check-in',
-        //      'check-out'=>'check-out',
-        //      'room'=>'room',
-        //      'fasilitas'=>'fasilitas |min:5 |max:255'
-        //  ]);
-        // dd ($request);
-
-        Booking::create([
-            'id_pelanggan' => null,
-            'room' => $request->room,
-            'nm' => $request->nm,
-            'fasilitas' => $request->fasilitas,
-            'cek_in' => $request->check_in,
-            'cek_out' => $request->check_out,
-            'email' => $request->email,
-            'no_tlp' => $request->NO_Telpon,
-            'jumlah_tamu' => $request->jumlah_tamu
-
-        ]);
-        return redirect()->route('detail.index');
+        //
     }
 
     /**
@@ -68,7 +45,7 @@ class BookingController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function sh($id)
+    public function show($id)
     {
         //
     }
@@ -79,9 +56,9 @@ class BookingController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function delete($id)
+    public function edit($id)
     {
-        return view('delet.add');
+        //
     }
 
     /**
@@ -93,12 +70,13 @@ class BookingController extends Controller
      */
     public function update(Request $request, $id)
     {
+        //
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  int  $id 
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function destroy($id)
