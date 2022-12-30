@@ -44,6 +44,7 @@ Route::resource('/about', About::class);
 Route::resource('/manage', Manage::class);
 Route::resource('/kontak', Kontak::class);
 Route::resource('/raja', Raja::class);
+Route::get('/show', [show::class]);
 Route::resource('/queen', Queen::class);
 Route::resource('/d_max', Dmax::class);
 Route::post('/register/basic/create', 'RegisterController@create')->name('register');

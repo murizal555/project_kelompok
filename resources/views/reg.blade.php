@@ -78,7 +78,7 @@
 
   <main class="form-signin w-100 m-auto">
     <form>
-      <img class="mb-4" src="{{asset('img/logo.png')}}" alt="" width="72" height="57">
+      <img class="mb-4" src="{{asset('img/logo.png')}}" alt="" width="72" height="57" style="border-radius: 50px;">
       <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
 
 

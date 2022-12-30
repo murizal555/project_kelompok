@@ -11,6 +11,10 @@
       <th scope="col">Cek-in</th>
       <th scope="col">Cek-out</th>
       <th scope="col">Fasilitas</th>
+      <th scope="col">E-mail</th>
+      <th scope="col">no_HP</th>
+      <th scope="col">jumlah tamu</th>
+
     </tr>
   </thead>
   <tbody>
@@ -22,10 +26,17 @@
       <td>{{$bk->cek_in}}</td>
       <td>{{$bk->cek_out}}</td>
       <td>{{$bk->fasilitas}}</td>
+      <td>{{$bk->email}}</td>
+      <td>{{$bk->no_tlp}}</td>
+      <td>{{$bk->jumlah_tamu}}</td>
+      <td> <button> <a href="/edit"> Edit </a></button></td>
+      <td> <button> <a href="/show"> delete </a></button></td>
+      <td> <button> <a href="/transaksi"> Transaksi </a> </button></td>
     </tr>
     @endforeach
   </tbody>
 </table>
+
 
 
 <br>
@@ -40,7 +51,6 @@
 <section class="blog">
   <div class="container">
     <div class="row">
-
       <div class="col-md-9 col-sm-8 col-xs-12">
         <h2 class="blog-title-head" style="text-align: center;">TERIMAKASIH TELAH MEMAKAI LAYANAN KAMI</h2>
         <!-- <p class="user-info">Posted by <a>Admin</a> in <a>General</a> | <a>10 Comments</a></p> -->

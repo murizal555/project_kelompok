@@ -35,4 +35,29 @@
   </div>
 </div>
 </div>
+<hr>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">Nama Hotel</th>
+      <th scope="col">Detail Hotel</th>
+      <th scope="col">Lokasi</th>
+      <th scope="col">Massage</th>
+      <th scope="col">nama</th>
+      <th scope="col">NIK</th>
+      <th scope="col">No Telpon</th>
+      <th scope="col">E-Mail</th>
+      <th scope="col">Massage</th>
+    </tr>
+    </thead>
+    <tbody>
+      <?php $no=1;?>
+      @foreach($detail as $dtl)
+      <tr>
+        <td>{{$no++}}</td>
+        <td>{{$dtl->}}</td>
+      </tr>
+    </tbody>
+</table>
+
 @endsection

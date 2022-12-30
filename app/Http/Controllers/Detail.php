@@ -15,9 +15,9 @@ class Detail extends Controller
      */
     public function index()
     {
-       $boking = DB::table('bookings')->get();
+        $boking = DB::table('bookings')->get();
 
-       $title = 'Detail';
+        $title = 'Detail';
         return view('pages.detail', compact('title', 'boking'));
     }
 
@@ -82,8 +82,11 @@ class Detail extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($Detail)
     {
         //
+        $Detail->delete();
+        return redirect()->route('Detail.index')
+            ->with('success', 'use delete successfully');
     }
 }
