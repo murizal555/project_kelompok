@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Booking;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
+use PhpParser\Node\Expr\Cast\Bool_;
 
 class BookingController extends Controller
 {
@@ -84,9 +85,10 @@ class BookingController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function delete($id)
+    public function delete(Booking $boking)
     {
-        return view('delet.add');
+        $boking->delete();
+        return redirect('booking.index');
     }
 
     /**
@@ -98,6 +100,16 @@ class BookingController extends Controller
      */
     public function update(Request $request, $id)
     {
+        $update_boking = booking::findOrFail($id);
+        $update_boking->nm = $request->updatenm;
+        $update_boking->room = $request->updateroom;
+        $update_boking->fasilitas = $request->updatefasilitas;
+        $update_boking->cek_in = $request->updatecek_in;
+        $update_boking->cek_out = $request->updatecek_out;
+        $update_boking->email = $request->updateemail;
+        $update_boking->no_tlp = $request->updateno_tlp;
+        $update_boking->jumlah_tamu = $request->updatejumlah_tamu;
+        $update_boking->save();
     }
 
     /**

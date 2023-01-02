@@ -18,7 +18,7 @@
       <img src="/images/dp1.jpg" alt="" width="200" height="200">
       <img src="/images/dv1.jpg" alt="" width="200" height="200">
       <img src="/images/dv2.jpg" alt="" width="200" height="200">
-      <form action="/booking" method="POST">
+      <form action="" method="POST">
         <div class="row">
           <div class="d-flex justify-content-around">
             <div class="col-md-4"> </br>
@@ -50,7 +50,7 @@
         </div>
         <div class="row mt-4">
           <div class="col text-end">
-              <strong>Rp.40000</strong>
+            <strong>Rp.40000</strong>
           </div>
           <div class="col text-">
             <form action="booking.html">

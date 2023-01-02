@@ -80,5 +80,8 @@ class hapus extends Controller
     public function destroy($id)
     {
         //
+        $hapus = hapus::find($id);
+        $hapus->delete;
+        return redirect('hapus');
     }
 }

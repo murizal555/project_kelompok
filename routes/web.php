@@ -45,6 +45,7 @@ Route::resource('/manage', Manage::class);
 Route::resource('/kontak', Kontak::class);
 Route::resource('/raja', Raja::class);
 Route::get('/show', [show::class]);
+Route::get('/hapus', [hapus::class]);
 Route::get('/ubah/{id}', [BookingController::class, 'ubah'])->name('ubah');
 Route::resource('/queen', Queen::class);
 Route::resource('/d_max', Dmax::class);
