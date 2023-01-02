@@ -29,7 +29,7 @@
       <td>{{$bk->email}}</td>
       <td>{{$bk->no_tlp}}</td>
       <td>{{$bk->jumlah_tamu}}</td>
-      <td> <button> <a href="/edit"> Edit </a></button></td>
+      <td> <button> <a href="/ubah/{{$bk->id_booking}}"> Edit </a></button></td>
       <td> <button> <a href="/show"> delete </a></button></td>
       <td> <button> <a href="/transaksi"> Transaksi </a> </button></td>
     </tr>

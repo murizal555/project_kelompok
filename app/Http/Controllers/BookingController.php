@@ -48,6 +48,7 @@ class BookingController extends Controller
         // dd ($request);
 
         Booking::create([
+            // kiri sesuai dengan controller kanan sesuai dengan database
             'id_pelanggan' => null,
             'room' => $request->room,
             'nm' => $request->nm,
@@ -63,14 +64,18 @@ class BookingController extends Controller
     }
 
     /**
-     * Display the specified resource.
-     *
+     * Store a newly created resource in storage.
      * @param  int  $id
+     * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function sh($id)
+    public function ubah(Request $request, $id)
     {
         //
+        $title = 'edit';
+        $boking = Booking::find($id);
+        // dd($boking);
+        return view('pages.edit', compact('title', 'boking'));
     }
 
     /**

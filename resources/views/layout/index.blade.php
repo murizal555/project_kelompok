@@ -11,7 +11,7 @@ License URI: http://www.themevault.net/license/-->
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="images/icons/favicon.png" />
+    <link rel="icon" href="images/icons/favicons.ico" />
     <title>hotel</title>
 
 
@@ -200,7 +200,7 @@ License URI: http://www.themevault.net/license/-->
         <!--back to top--->
         <a style="display: none" href="javascript:void(0);" class="scrollTop back-to-top" id="back-to-top">
             <span><i aria-hidden="true" class="fa fa-angle-up fa-lg"></i></span>
-            <span>Top</span>
+            <span>up</span>
         </a>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

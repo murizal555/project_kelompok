@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Booking extends Model
 {
     use HasFactory;
+    protected $primaryKey = 'id_booking';
     protected $fillable = [
         'id_pelanggan',
         'nm',
