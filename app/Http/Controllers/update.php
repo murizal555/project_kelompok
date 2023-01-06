@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class hapus extends Controller
+class update extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -66,9 +66,20 @@ class hapus extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, Detail $post)
     {
         //
+        $this->validate($request, [
+            'nm' => 'nm',
+            'room'=>'room',
+            'fasilitas'=>'fasilitas',
+            'cek_in'=>'cek_in',
+            'cek_out'=>'cek_out',
+            'email'=>'email',
+            'no_tlp'=>'no_tlp',
+            'jumlah_tamu'=>'jumlah_tamu'
+
+        ]);
     }
 
     /**
@@ -80,8 +91,5 @@ class hapus extends Controller
     public function destroy($id)
     {
         //
-        // $hapus = hapus::find($id);
-        // $hapus->delete;
-        // return redirect('hapus');
     }
 }

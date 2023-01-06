@@ -128,8 +128,9 @@
 
 <body>
     <div class="container">
-        <form action="{{route('booking.store')}}" method="POST">
+        <form action="/ubah/{{$boking->id_booking}}" method="POST">
             @csrf
+            @method('PUT')
             <h1 style="text-align: center;">Hotel boking</h1><br>
             <div class="input-group">
                 <label for="Nama">Nama</label>
@@ -138,19 +139,19 @@
             <div class="check-in">
                 <div class="input-group">
                     <label for="check-in">Check-in</label>
-                    <input type="date" id="" name="check_in" value="{{$boking->check_in}}">
+                    <input type="date" id="" name="cek_in" value="{{$boking->cek_in}}">
                 </div>
                 <div class="check-out">
                     <div class="input-group">
                         <label for="check-out">Check-out</label>
-                        <input type="date" id="" name="check_out" value="{{$boking->check_out}}">
+                        <input type="date" id="" name="cek_out" value="{{$boking->cek_out}}">
                     </div>
                 </div>
             </div>
             <div class="room">
                 <div class="input-group">
                     <label for="room">Room</label>
-                    <input type="number" id="room" min="1" name="room"><br>
+                    <input type="number" id="room" min="1" name="room" value="{{$boking->room}}"><br>
                 </div>
             </div>
             <div class="input-group">
@@ -165,7 +166,7 @@
             <br>
             <div class="input-group">
                 <label for="fasilitas">No_Telpon</label>
-                <input type="tel" pattern="^\d{12}$" required name="NO_Telpon" value="{{$boking->NO_Telpon}}">
+                <input type="tel" pattern="^\d{12}$" required name="no_tlp" value="{{$boking->no_tlp}}">
 
             </div>
             <br>
@@ -180,6 +181,7 @@
             </div>
         </form>
     </div>
+
 </body>
 
 </html>

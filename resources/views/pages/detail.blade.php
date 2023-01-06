@@ -29,9 +29,9 @@
       <td>{{$bk->email}}</td>
       <td>{{$bk->no_tlp}}</td>
       <td>{{$bk->jumlah_tamu}}</td>
-      <td> <button> <a href="/ubah/{{$bk->id_booking}}"> Edit </a></button></td>
-      <td> <button> <a href="/hapus{$id}/{{$hapus->id_booking}}"> delete </a></button></td>
-      <td> <button> <a href="/show"> Transaksi </a> </button></td>
+      <td> <button> <a href="/edit/{{$bk->id_booking}}"> Edit </a></button></td>
+      <td> <button> <a href="/delete/{{$bk->id_booking}}"> delete </a></button></td>
+      <td> <button> <a href="tugas/yk.html"> Transaksi </a> </button></td>
     </tr>
     @endforeach
   </tbody>
@@ -62,15 +62,7 @@
         <br>
         <h1>TUGAS PER-KELOMPOK</h1>
         <p>TI - B</p>
-
-
       </div>
-
-
-
-
-
-      </aside>
     </div>
   </div>
 </section>

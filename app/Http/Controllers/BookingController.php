@@ -70,13 +70,27 @@ class BookingController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+
+    public function edit(Request $request, $id)
+    {
+        $boking  = Booking::find($id);
+        $title = 'Edit';
+        return view('pages/update', compact('title', 'boking'));
+    }
     public function ubah(Request $request, $id)
     {
-        //
-        $title = 'edit';
-        $boking = Booking::find($id);
-        // dd($boking);
-        return view('pages.edit', compact('title', 'boking'));
+        $update_Boking = booking::findOrFail($id);
+        $update_Boking->nm = $request->nm;
+        $update_Boking->room = $request->room;
+        $update_Boking->fasilitas = $request->fasilitas;
+        $update_Boking->cek_in = $request->cek_in;
+        $update_Boking->cek_out = $request->cek_out;
+        $update_Boking->email = $request->email;
+        $update_Boking->no_tlp = $request->no_tlp;
+        $update_Boking->jumlah_tamu = $request->jumlah_tamu;
+        $update_Boking->save();
+
+        return redirect()->route('detail.index');
     }
 
     /**
@@ -100,16 +114,16 @@ class BookingController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $update_boking = booking::findOrFail($id);
-        $update_boking->nm = $request->updatenm;
-        $update_boking->room = $request->updateroom;
-        $update_boking->fasilitas = $request->updatefasilitas;
-        $update_boking->cek_in = $request->updatecek_in;
-        $update_boking->cek_out = $request->updatecek_out;
-        $update_boking->email = $request->updateemail;
-        $update_boking->no_tlp = $request->updateno_tlp;
-        $update_boking->jumlah_tamu = $request->updatejumlah_tamu;
-        $update_boking->save();
+        $update_Boking = booking::findOrFail($id);
+        $update_Boking->nm = $request->updatenm;
+        $update_Boking->room = $request->updateroom;
+        $update_Boking->fasilitas = $request->updatefasilitas;
+        $update_Boking->cek_in = $request->updatecek_in;
+        $update_Boking->cek_out = $request->updatecek_out;
+        $update_Boking->email = $request->updateemail;
+        $update_Boking->no_tlp = $request->updateno_tlp;
+        $update_Boking->jumlah_tamu = $request->updatejumlah_tamu;
+        $update_Boking->save();
     }
 
     /**
@@ -118,8 +132,12 @@ class BookingController extends Controller
      * @param  int  $id 
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(booking $booking, $id)
     {
         //
+        $booking = Booking::find($id);
+        $booking->delete();
+        return redirect()->route('detail.index')
+            ->with('success', 'user delete successfully');
     }
 }
