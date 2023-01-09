@@ -13,6 +13,8 @@ use App\Http\Controllers\Detail;
 use App\Http\Controllers\Garden;
 use App\Http\Controllers\Kontak;
 use App\Http\Controllers\Manage;
+use App\Http\Controllers\atm;
+
 // use App\Http\views
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\User as ControllersUser;
@@ -34,12 +36,13 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-
+// Route::resource('/register', User::class);
 Route::resource('/login', User::class);
-Route::resource('/reg', User::class);
-Route::resource('/home', Home::class);
+Route::resource('/registrasi', registrasi::class);
 Route::resource('/hotel', Hotel::class);
 Route::resource('/detail', Detail::class);
+Route::resource('/transaksi', transaksi::class);
+Route::resource('/atm', atm::class);
 Route::resource('/about', About::class);
 Route::resource('/manage', Manage::class);
 Route::resource('/kontak', Kontak::class);

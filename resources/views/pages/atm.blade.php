@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -18,7 +19,7 @@
             <div class="card" style="width: 18rem;">
                <div class="card-body">
                   <!-- <span class="me-3">MANDIRI</span> -->
-                  <button class="btn btn-light" type="button"><img src="MANDIRI.jpg" alt="" width="70px"></button>
+                  <button class="btn btn-light" type="button"><img href="/transaksi" src="/tugas/MANDIRI.jpg" alt="" width="70px"></button>
                </div>
             </div>
          </div>
@@ -26,7 +27,8 @@
             <div class="card" style="width: 18rem;">
                <div class="card-body">
                   <!-- <span class="me-3">BCA</span> -->
-                  <button class="btn btn-light" type="button"><img src="BCA.jpeg" alt="" width="70px"></button>
+
+                  <a href="{{route('transaksi.index')}}"> <button class="btn btn-light" type="button"><img src="/tugas/BCA.jpeg" alt="transaksi" width="70px"></button></a>
                </div>
             </div>
          </div>
@@ -34,7 +36,7 @@
             <div class="card" style="width: 18rem;">
                <div class="card-body">
                   <!-- <span class="me-3">BRI</span> -->
-                  <button class="btn btn-light" type="button"><img src="BRI.jpeg" alt="" width="70px"></button>
+                  <button class="btn btn-light" type="button"><img src="tugas/BRI.jpeg" alt="" width="70px"></button>
                </div>
             </div>
          </div>
@@ -42,7 +44,8 @@
             <div class="card" style="width: 18rem;">
                <div class="card-body">
                   <!-- <span class="me-3">indomaret</span> -->
-                  <button class="btn btn-light" type="button"><img src="indomaret.png" alt="" width="70px"></button>
+                  <!-- <button class="btn btn-light" type="button"><img src="indomaret.png" alt="" width="70px"></button> -->
+                  <a class="btn btn-light" href="/transaksi"><img src="/tugas/indomaret.png" alt="" width="70px"></a>
                </div>
             </div>
          </div>
@@ -50,7 +53,8 @@
             <div class="card" style="width: 18rem;">
                <div class="card-body">
                   <!-- <span class="me-3">Alfamart</span> -->
-                  <button class="btn btn-light" type="button"><img src="ALFA.jpeg" alt="" width="70px"></button>
+                  <!-- <button class="btn btn-light" type="button"><img src="ALFA.jpeg" alt="" width="70px"></button> -->
+                  <a class="btn btn-light" href="/transaksi"><img src="/tugas/ALFA.jpeg" alt="" width="70px"></a>
                </div>
             </div>
          </div>
@@ -69,10 +73,10 @@
          <div class="col-12 mt-3">
             <button class="btn btn-light" type="button"><img src="indomaret.png" alt="" width="70px">indomart</button>
          </div> -->
-       </div>
+      </div>
    </div>
-</div>
-   
+   </div>
+
    <!-- <div class="container">
       
    <div class="tabcontent" role="alert">
@@ -89,4 +93,5 @@
       <button ><p><img src="indomaret.png" alt="" width="70px">indomart                           </p></button>
    </div> -->
 </body>
+
 </html>

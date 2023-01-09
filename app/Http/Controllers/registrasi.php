@@ -3,10 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 
-
-class User extends Controller
+class registrasis extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,13 +13,9 @@ class User extends Controller
      */
     public function index()
     {
-        $title = 'Login';
-        return view('login', compact('title'));
-    }
-    public function register()
-    {
-        $title = 'reg';
-        return view('reg', compact('title'));
+        //
+        $title = 'index';
+        return view('index', compact('title'));
     }
 
     /**
@@ -32,25 +26,6 @@ class User extends Controller
     public function create()
     {
         //
-    }
-
-    public function auth(Request $request)
-    {
-        // dd($request);
-        $auth = $request->validate([
-            'email' => ['required', 'email'],
-            'password' => ['required'],
-        ]);
-
-        if (Auth::attempt($auth)) {
-
-
-            return redirect('home');
-        }
-
-        return back()->withErrors([
-            'email' => 'The provided credentials do not match our records.',
-        ])->onlyInput('email');
     }
 
     /**
@@ -67,7 +42,7 @@ class User extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  int  $id 
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
     public function show($id)

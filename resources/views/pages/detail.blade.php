@@ -27,15 +27,15 @@
       <td>{{$bk->cek_out}}</td>
       <td>{{$bk->fasilitas}}</td>
       <td>{{$bk->email}}</td>
-      <td>{{$bk->no_tlp}}</td>
+      <td styl> {{$bk->no_tlp}}</td>
       <td>{{$bk->jumlah_tamu}}</td>
       <td> <button> <a href="/edit/{{$bk->id_booking}}"> Edit </a></button></td>
       <td> <button> <a href="/delete/{{$bk->id_booking}}"> delete </a></button></td>
-      <td> <button> <a href="tugas/yk.html"> Transaksi </a> </button></td>
+      <td> <button> <a href="{{route('atm.index')}}"> Transaksi</a></button></td>
     </tr>
     @endforeach
   </tbody>
-</table>
+</table>7
 
 
 

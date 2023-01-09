@@ -81,8 +81,8 @@ License URI: http://www.themevault.net/license/-->
                             <nav class="navbar navbar-default">
                                 <div class="navbar-header page-scroll">
                                     <button data-target=".navbar-ex1-collapse" data-toggle="collapse" class="navbar-toggle" type="button">
-                                        <span class="sr-only">Toggle navigation</span>
-                                        <span class="icon-bar"></span>
+                                        <span class="sr-only >Toggle navigation</span>
+                                        <span class=" icon-bar"></span>
                                         <span class="icon-bar"></span>
                                         <span class="icon-bar"></span>
                                     </button>
@@ -90,7 +90,7 @@ License URI: http://www.themevault.net/license/-->
                                 <div class="collapse navigation navbar-collapse navbar-ex1-collapse remove-space">
                                     <ul id="" class="list-unstyled nav1 cl-effect-10">
                                         <li>
-                                            <a data-hover="Home" href="{{route('home.index')}}"><span>Home</span></a>
+                                            <a data-hover="Home" href="{{route('hotel.index')}}"><span>Home</span></a>
                                         </li>
                                         <li>
                                             <a data-hover="About" href="{{route('about.index')}}"><span>About</span></a>
@@ -107,13 +107,16 @@ License URI: http://www.themevault.net/license/-->
                                         <li>
                                             <a data-hover="Contact Us" href="{{route('kontak.index')}}"><span>contact Us</span></a>
                                         </li>
+                                        <li>
+                                            <a data-hover="REGISTER" \href="{{route('kontak.index')}}"><span>REGISTER</span></a>
+                                        </li>
                                     </ul>
                                 </div>
                             </nav>
                         </div>
                         <div class="col-md-2 col-sm-4 col-xs-12 hidden-sm">
                             <div class="text-right">
-                                <a href="{{route('reg.index')}}"> <button style="border-radius: 12px;" class="book-now-btn" href="">SING-IN</button></a>
+                                <a href="{{route('login.index')}}"> <button style="border-radius: 12px;" class="book-now-btn" href="">Login</button></a>
                             </div>
                         </div>
                     </div>
@@ -169,7 +172,7 @@ License URI: http://www.themevault.net/license/-->
                         <div class="footer-details">
                             <h4>explore</h4>
                             <ul class="list-unstyled footer-links">
-                                <li class="active"><a href="{{route('home.index')}}">Home</a></li>
+                                <li class="active"><a href="{{route('hotel.index')}}">Home</a></li>
                                 <li><a href="{{route('about.index')}}" style="border-radius: 12 px;">About</a></li>
                                 <li><a href="{{route('hotel.index')}}">Hotel</a></li>
                                 <li><a href="{{route('manage.index')}}">Manage</a></li>

@@ -75,41 +75,41 @@
 </head>
 
 <body class="text-center">
-    
+
     <main class="form-signin w-100 m-auto">
-            <div class="container">
+        <div class="container">
             <div class="row">
                 <div class="col-5">
-                <form action="/auth" method="POST">
-                    @csrf
-                    <img class="mb-4" src="{{asset('images/banner.png')}}" alt="" width="72" height="57">
-                    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+                    <form action="/auth" method="POST">
+                        @csrf
+                        <img class="mb-4" style="border-radius: 110px;" src="{{asset('images/logos.jpeg')}}" alt="" width="72" height="57">
+                        <h1 class="h3 mb-3 fw-normal">Please Login</h1>
 
 
-                    <div class="form-floating">
-                        <label for="floatingInput">Email address</label>
-                        <input name="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                    </div>
-                    <div class="form-floating">
-                        <label for="floatingPassword">Password</label>
-                        <input name="password" type="password" class="form-control" id="floatingPassword" placeholder="Password">
-                    </div>
+                        <div class="form-floating">
+                            <label for="floatingInput">Email address</label>
+                            <input name="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+                        </div>
+                        <div class="form-floating">
+                            <label for="floatingPassword">Password</label>
+                            <input name="password" type="password" class="form-control" id="floatingPassword" placeholder="Password">
+                        </div>
 
-                    <div class="checkbox mb-3">
-                        <label>
-                            <input type="checkbox" value="remember-me"> Remember me
-                        </label>
-                    </div>
-                    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-                    <br>
-                    <br>
-                    <a class="btn text-primary" href="/sigup">sig up</a>
-                    <p class="mt-5 mb-3 text-muted">&copy; TUGAS-FRAMEWORK</p>
-                </form>
+                        <div class="checkbox mb-3">
+                            <label>
+                                <input type="checkbox" value="remember-me"> Remember me
+                            </label>
+                        </div>
+                        <button class="w-100 btn btn-lg btn-primary" type="submit">Login</button>
+                        <br>
+                        <br>
+                        <a class="btn text-primary" href="/sigup">Log out</a>
+                        <p class="mt-5 mb-3 text-muted">&copy; TUGAS-FRAMEWORK</p>
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-        </main>
+    </main>
 
 
 </body>

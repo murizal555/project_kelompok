@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class reg extends Controller
+class login extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class reg extends Controller
     public function index()
     {
         //
-        $title = 'index';
-        return view('index', compact('title'));
+        $title = 'login';
+        return view('login', compact('title'));
     }
 
     /**
@@ -37,6 +37,12 @@ class reg extends Controller
     public function store(Request $request)
     {
         //
+        // dd($request);
+        login::create([
+            'user' => $request->nm,
+            'password' => $request->password
+        ]);
+        return redirect()->route('login.index');
     }
 
     /**

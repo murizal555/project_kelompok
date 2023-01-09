@@ -3,12 +3,12 @@
 <div class="container">
   <div class="row">
     <div class="col-md-6 contact-form">
-      <h3>Tambah <span>Hotel</span></h3>
+      <h3> <span> Tambah</span>Hotel</h3>
       <form action="{{route('manage.store')}}" method="POST">
-        <input type="text" class="form-control" name="Nama hotel" placeholder="Nama hotel" required="" />
-        <input type="Detail Hotel" class="form-control" name="Detail Htel" placeholder="Detail Hotel" required="" />
-        <input type="Lokasi" class="form-control" name="Lokasi" placeholder="Lokasi" required="" />
-        <textarea class="form-control" name="Message" placeholder="Massage ...." required=""></textarea>
+        <input type="text" style="border-radius: 100px;" class="form-control" name="Nama hotel" placeholder="Nama hotel" required="" />
+        <input type="Detail Hotel" style="border-radius: 100px;" class="form-control" name="Detail Htel" placeholder="Detail Hotel" required="" />
+        <input type="Lokasi" style="border-radius: 100px;" class="form-control" name="Lokasi" placeholder="Lokasi" required="" />
+        <textarea class="form-control" style="border-radius: 10px;" name="Message" placeholder="Massage ...." required=""></textarea>
       </form>
     </div>
     <div class="clearfix"></div>
@@ -23,11 +23,11 @@
       <h3 style="text-align: center;">Isi data<span> Pribadi</span></h3>
       <form action="{{route('manage.store')}}" method="POST">
         @csrf
-        <input type="text" class="form-control" name="Nama" placeholder="Nama" required="" />
-        <input type="Nik" class="form-control" name="Nik" placeholder="Nik" required="nik" />
-        <input type="No Hp" class="form-control" name="No HP" placeholder="No hp" required />
-        <input type="Email" class="form-control" name="Email" placeholder="Email" required="" />
-        <textarea class="form-control" name="Message" placeholder="Massage ...." required=""></textarea>
+        <input type="text" style="border-radius: 100px;" class="form-control" name="Nama" placeholder="Nama" required="" />
+        <input type="Nik" style="border-radius: 100px;" class="form-control" name="Nik" placeholder="Nik" required="nik" />
+        <input type="No Hp" style="border-radius: 100px;" class="form-control" name="No HP" placeholder="No hp" required />
+        <input type="Email" style="border-radius: 100px;" class="form-control" name="Email" placeholder="Email" required="" />
+        <textarea class="form-control" style="border-radius: 10px;" name="Message" placeholder="Massage ...." required=""></textarea>
         <button type="submit">submit</button>
       </form>
     </div>
