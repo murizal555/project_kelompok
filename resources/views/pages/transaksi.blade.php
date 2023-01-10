@@ -25,10 +25,10 @@
         </div>
         <div class="mb-3" style="width: 20rem">
             <label for="exampleFormControl" class="form-label">Masukkan Nomor Handphone yang Terdaftar</label>
-            <input class="form-control" type="text" placeholder="no hp" aria-label=".form-control-sm example" />
+            <input class="form-control" type="text" placeholder="No_HP" aria-label=".form-control-sm example" />
         </div>
         <button type="submit" class="btn btn-primary">
-            Bayar Sekarang
+            Bayar
         </button>
     </div>
 </body>

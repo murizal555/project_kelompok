@@ -14,6 +14,7 @@ use App\Http\Controllers\Garden;
 use App\Http\Controllers\Kontak;
 use App\Http\Controllers\Manage;
 use App\Http\Controllers\atm;
+use App\Http\Controllers\transaksi;
 
 // use App\Http\views
 use App\Http\Controllers\BookingController;

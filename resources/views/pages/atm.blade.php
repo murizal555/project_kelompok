@@ -19,7 +19,7 @@
             <div class="card" style="width: 18rem;">
                <div class="card-body">
                   <!-- <span class="me-3">MANDIRI</span> -->
-                  <button class="btn btn-light" type="button"><img href="/transaksi" src="/tugas/MANDIRI.jpg" alt="" width="70px"></button>
+                  <a href="{{route('transaksi.index')}}"> <button class="btn btn-light" type="button"><img href="{{route('transaksi.index')}}" src="/tugas/MANDIRI.jpg" alt="" width="70px"></button></a>
                </div>
             </div>
          </div>
@@ -36,7 +36,7 @@
             <div class="card" style="width: 18rem;">
                <div class="card-body">
                   <!-- <span class="me-3">BRI</span> -->
-                  <button class="btn btn-light" type="button"><img src="tugas/BRI.jpeg" alt="" width="70px"></button>
+                  <a href="{{route('transaksi.index')}}"> <button class="btn btn-light" type="button"><img src="tugas/BRI.jpeg" alt="" width="70px"></button></a>
                </div>
             </div>
          </div>
@@ -45,7 +45,7 @@
                <div class="card-body">
                   <!-- <span class="me-3">indomaret</span> -->
                   <!-- <button class="btn btn-light" type="button"><img src="indomaret.png" alt="" width="70px"></button> -->
-                  <a class="btn btn-light" href="/transaksi"><img src="/tugas/indomaret.png" alt="" width="70px"></a>
+                  <a href=""> <a class="btn btn-light" href="/transaksi"><img src="/tugas/indomaret.png" alt="" width="70px"></a></a>
                </div>
             </div>
          </div>
@@ -54,7 +54,7 @@
                <div class="card-body">
                   <!-- <span class="me-3">Alfamart</span> -->
                   <!-- <button class="btn btn-light" type="button"><img src="ALFA.jpeg" alt="" width="70px"></button> -->
-                  <a class="btn btn-light" href="/transaksi"><img src="/tugas/ALFA.jpeg" alt="" width="70px"></a>
+                  <a class="btn btn-light" href="{{route('transaksi.index')}}"><img src="/tugas/ALFA.jpeg" alt="" width="70px"></a>
                </div>
             </div>
          </div>
